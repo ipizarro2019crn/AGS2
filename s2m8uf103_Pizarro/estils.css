@@ -1,11 +1,20 @@
 
+body{
+  font-size:1em;
+}
 p
   {
-    font-size: 24px;
-  line-height: 32px;
+  font-size: 1,5em;
+  line-height: 2em;
   text-align: justify;
 
   }
+  /*
+  0,75=12px
+  1em=16px(paragrafo)
+  1,5em=24(titulares)
+  2em=32 (interlineat)
+  */
 
 img
   {
@@ -56,4 +65,12 @@ div
 .c2{
   width: 390px;
   float: right;
+}
+
+h2{
+  font-family: georgia, Times;
+  font-family: helvetica, arial, sans-serif;
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  font-size: 1em;
+
 }
