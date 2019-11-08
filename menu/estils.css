@@ -66,9 +66,10 @@ a {
   height: 40px 40px;
   display: block;
   margin-top: 90px;
-  color: black;
-  background-color: grey; border-radius: 100px; height: 30px; width: 150px;
+  color: #f23916;
+  background-color: white; border-radius: 100px; height: 100px auto; width: 150px;
   margin-left: 25px;
+  text-decoration: none;
 
 
 }/* para que el enlace funcione para toda la caja */
