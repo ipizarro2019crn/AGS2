@@ -8,7 +8,7 @@ body{
   }
 }
 /*movil horizontal*/
-@media screen and (max-width:640px)and (orientation:landscape){
+@media screen and (max-width:640px) and (orientation:landscape){
   body{
     background-color: #03a8c1;
   }
@@ -30,6 +30,6 @@ body{
 /*tblets horizontal*/
 @media screen and (min-width:641px) and (max-width:1200px) and (orientation:landscape){
   body{
-    background-color: #f38819;
+    background-color: #009c7b;
   }
 }
