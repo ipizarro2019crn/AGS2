@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PhotoFilter</title>
+
+  <style>
+
+    *{
+      position: relative;
+      font-family: Helvetica, Sans-Serif;
+      text-align: center;
+    }
+
+    ul {
+      width: 960px;
+      margin: auto;
+    }
+
+    li {
+      height: 420px;
+      width: 180px;
+      margin: 4px;
+      background-color: #FEFEFE;
+     background-image: linear-gradient(45deg, #CBCBCB 25%, transparent 25%, transparent 75%, #CBCBCB 75%, #CBCBCB), linear-gradient(45deg, #CBCBCB 25%, transparent 25%, transparent 75%, #CBCBCB 75%, #CBCBCB);
+     background-size:10px 10px;
+     background-position:0 0, 15px 15px;
+
+      /* background: repeating-linear-gradient(90deg, #ddd 0px, #ddd 4px, transparent 4px, transparent 8px),
+                  repeating-linear-gradient(180deg, #ddd 0px, #ddd 4px, transparent 4px, transparent 8px);
+      background: ; */
+
+      display: block;
+      float: left;
+      padding: 2px;
+    }
+
+    h1{
+      box-sizing: content-box;
+      border: 5px solid turquoise;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, navy, black);
+      margin: 20px auto;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px grey;
+      color: turquoise;
+      font-size: 72px;
+      line-height: 100px;
+    }
+
+    .opacity img{
+      -webkit-filter: opacity(100%) hue-rotate(180deg);
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>Ps</h1>
+
+  <ul>
+    <li class="efectes opacity">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" id="imatge" width="100%" alt="">
+      <h2>Desenfocar</h2>
+      <input type="file" accept="image/*" multiple="true" id="contingut">
+      <p>
+        Opacidad<br/>
+        <input type="range" id="opacidad" min="0" max="100" value="100">
+      </p>
+
+      <p>
+        Tono<br/>
+        <input type="range" id="tono" min="0" max="100" value="100">
+      </p>
+    </li>
+  </ul>
+
+</body>
+
+<script type="text/javascript">
+// Definir Variables
+
+    // Añadir la imagen como variable
+    var imatge=document.getElementById('imatge');
+
+    // Cada tirador como variable
+    var opacidad=document.getElementById('opacidad');
+    var tono=document.getElementById('tono');
+
+    // Definir la variable para coger la imagen
+    var contingut=document.getElementById('contingut');
+
+// Definimos los eventos
+    //Eventos que controlan los distintos ajustes
+    opacidad.addEventListener('input',ajuste);
+    tono.addEventListener('input',ajuste);
+
+    //Evento que controla el cambio de imagen
+    contingut.addEventListener('change',canvia);
+
+// Definimos las funcionas
+    //cambiar los efectos
+    function ajuste(){
+      imatge.style.webkitFilter="opacity("+opacidad.value+"%)"+"hue-rotate("+tono.value+"deg)";
+    }
+    //cambiar las imagenes
+    function canvia(){
+      imatge.src=URL.createObjectURL(event.target.files[0]);
+    }
+</script>
+
+
+
+</html>

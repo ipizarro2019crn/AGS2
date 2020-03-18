@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+    body{
+      font-family: sans-serif;
+      margin:0px;
+      padding:0px;
+      font-size:18px;
+      line-height:22px;
+    }
+
+      #sol{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: darkorange;
+        display:inline-block;
+
+
+      }
+      #luna{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display:inline-block;
+        box-shadow: 10px 10px 0 silver;
+
+      }
+      ul{
+        display:inline-block;
+        margin-left:200px;
+      }
+      li{
+        display:inline-block;
+        margin:10px;
+        font-size:2em;
+      }
+    #txt{
+      width:80%;
+      margin: 0 auto;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="sol"></div>
+    <div id="luna"></div>
+
+
+    <ul>
+      <li id="a">A</li>
+      <li id="aa">AA</li>
+      <li id="aaa">AAA</li>
+    </ul>
+
+    <p id="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+    <script type="text/javascript" language="javascript">
+
+    //Events
+
+      document.getElementById('sol').addEventListener('click',dia);
+      document.getElementById('luna').addEventListener('click',nit);
+
+      //crear functions
+
+      function dia(){
+        document.body.style.backgroundColor="yellow";
+        document.body.style.color="black";
+
+      }
+
+
+      function nit(){
+          document.body.style.backgroundColor="black";
+          document.body.style.color="white";
+      }
+
+      document.getElementById('a').addEventListener('click',petit);
+      document.getElementById('aa').addEventListener('click',gran);
+      document.getElementById('aaa').addEventListener('click',mesgran);
+
+      function petit(){
+        document.getElementById('txt').style.fontSize="1em";
+        document.getElementById('txt').style.lineHeight="1.2em";
+
+      }
+
+
+      function gran(){
+          document.getElementById('txt').style.fontSize="2em";
+          document.getElementById('txt').style.lineHeight="1.2em";
+      }
+
+      function mesgran(){
+          document.getElementById('txt').style.fontSize="3em";
+          document.getElementById('txt').style.lineHeight="1.2em";
+      }
+
+
+
+    </script>
+
+
+  </body>
+</html>

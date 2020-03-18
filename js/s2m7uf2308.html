@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+    body{
+      font-size: 20px;
+      color:grey;
+    }
+    .bola{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: solid  3px grey;
+      margin:5px;
+      display:inline-block;
+    }
+
+  </style>
+  <body>
+    <h1>Titular</h1>
+    <h1>Titular2</h1>
+
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+    <div class="bola"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <script type="text/javascript" language="<javascript">
+
+      var dies=["dilluns","dimarts","dimecres","dijous","divendres","dissabte","diumenge"];
+      document.write(dies[5]);
+      /*variables matricials*/
+      var color=["#ff8e61","tomato","#ff7c47 ","#ffb294","#ff692e","#ffd7c7"];
+      document.write(color[5]);
+
+      /*bucle*/
+
+      var x=0;
+      while (x<10) {
+        document.write(x+"</br>");
+        x++;
+
+      }
+
+      for (var i = 0; i < 10; i++) {
+        document.write(i+"</br>");
+      }
+      for (var j = 0; j < dies.length; j++) {
+      document.write(dies[j]+"</br>");
+      }
+
+      /*getelementebyid =unic
+      getelemntsbyTagname= uls, lis, ps
+      getelementbyclassname= todo lo que engloba dentro de la clas */
+
+      var titol=document.getElementsByTagName('h1');
+
+      titol[0].style.color="tomato";
+
+      var paragraf=document.getElementsByTagName('p');
+      paragraf[2].style.fontStyle="italic";
+
+    //variable matricial que guarda totes les boles
+
+      var bola=document.getElementsByClassName('bola');
+      bola[0].style.backgroundColor=color[4];
+      bola[1].style.backgroundColor=color[0];
+      bola[2].style.backgroundColor=color[2];
+      bola[3].style.backgroundColor=color[3];
+      bola[4].style.backgroundColor=color[5];
+
+      for (var k = 0; k < bola.length; k++) {
+        bola[k].style.backgroundColor=color[0];
+      }
+
+
+
+    </script>
+
+  </body>
+</html>

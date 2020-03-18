@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style media="screen">
+#tot{
+  width:40%;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+#bombilla{
+  width:80%;
+  margin:0 auto;
+
+}
+ul{
+  width:60%;
+  margin:0 auto;
+}
+
+li{
+  display: inline-block;
+  width:100px;
+  height: 50px;
+  margin:10px;
+  padding:10px;
+  text-align:center;
+  background-color: tomato;
+  font-size: 36px;
+  font-height:50px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="tot">
+
+
+  <img src="img/apagada.jpg" alt="" id="bombilla">
+
+
+</div>
+
+<script type="text/javascript">
+
+  var imatge=document.getElementById('bombilla');
+  imatge.addEventListener('click',bombilla)
+
+
+  function bombilla(){
+    if(imatge.src.match("img/encendida.jpg")){
+      imatge.src="img/apagada.jpg";
+      console.log("encendida");
+    }
+
+    else{
+      imatge.src="img/encendida.jpg";
+
+    console.log("apagada");
+  }
+
+
+  }
+
+
+
+
+
+</script>
+
+</body>
+</html>

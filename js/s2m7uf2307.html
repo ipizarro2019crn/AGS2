@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+    body{
+      font-family: sans-serif;
+      margin:0px;
+      padding:0px;
+      font-size:120px;
+      line-height:120px;
+    }
+
+      #red{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        display:block;
+
+      }
+
+      #orange{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: orange;
+        display:block;
+
+      }
+      #green{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: green;
+        display:block;
+
+      }
+
+      #txt{
+        width:75%;
+        height:700px;
+        float:left;
+        overflow:hidden
+
+
+
+      }
+
+
+      ul{
+        float:left;
+        widht:17%;
+
+      }
+      li{
+
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="green"></div>
+
+
+
+
+
+
+    <p id="txt"></p>
+
+
+
+
+
+    <script type="text/javascript" language="javascript">
+
+    //Events
+
+      document.getElementById('red').addEventListener('click',red);
+      document.getElementById('orange').addEventListener('click',orange);
+      document.getElementById('green').addEventListener('click',green);
+
+      //crear functions
+
+      function red(){
+        document.body.style.backgroundColor="darkred";
+        document.getElementById('txt').innerHTML="STOP"
+
+
+      }
+
+      function orange(){
+          document.body.style.backgroundColor="darkorange";
+          document.getElementById('txt').innerHTML="ATENCIÓN"
+
+      }
+      function green(){
+          document.body.style.backgroundColor="darkgreen";
+          document.getElementById('txt').innerHTML="GO"
+
+      }
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+
+  .desenfocar img{
+    -webkit-filter: blur(5px);
+  }
+
+  </style>
+</head>
+<body>
+
+  <input type="file" accept="image/*" multiple="true" id="contingut">
+  <img class="efectes desenfocar">
+    <input type="range" id=" " min="0" max="25">
+  </img>
+  <img class="">
+    <input type="range" id=" " min="0" max="25">
+  </img>
+
+
+  <script type="text/javascript">
+    var contingut=document.getElementById('contingut');
+    contingut.addEventListener('change',canvia);
+    var imatge=document.getElementsByTagName('img');
+
+    function canvia(){
+      imatge[0].src=URL.createObjectURL(event.target.files[0]);
+      imatge[1].src=URL.createObjectURL(event.target.files[1]);
+
+    }
+
+
+
+
+  </script>
+</body>
+</html>

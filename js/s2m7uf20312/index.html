@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style media="screen">
+
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+#tot{
+  width:40%;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+#fotogrande{
+  width:100%;
+  margin:0 auto;
+  display: inline-block;
+
+}
+
+.fotos{
+  width:100%;
+  margin:0 auto;
+
+}
+
+#fotopeque , #fotopeque2, #fotopeque3, #fotopeque1{
+  display: inline-block;
+  width:30px;
+  height:;
+  margin:40px;
+  padding:0px;
+
+
+}
+.fotos img{
+  width:300%;
+}
+
+ul{
+  text-align: center;
+}
+li{
+  display: inline-block;
+  font-size: 144px;
+  font-weight: 900;
+
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="tot">
+
+  <ul>
+    <li id="atras"><</li>
+    <li id="num"></li>
+    <li id="adelante">></li>
+  </ul>
+
+
+  <img src="img/IMG_4744.JPG" alt="" id="fotogrande">
+
+  <div class="fotos">
+    <div id="fotopeque"><img src="img/IMG_4744.JPG" alt=""></div>
+    <div id="fotopeque"><img src="img/IMG_4465.JPG" alt=""></div>
+    <div id="fotopeque"><img src="img/IMG_4666.JPG" alt=""></div>
+    <div id="fotopeque"><img src="img/IMG_4621.JPG" alt=""></div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+  var imagengrande=document.getElementById('fotogrande');
+
+
+  document.getElementById('fotogrande').addEventListener('mouseover',grande);
+  fotopeque[0].addEventListener('mouseover',peque);
+  fotopeque[1].addEventListener('mouseover',peque1);
+  fotopeque[2].addEventListener('mouseover',peque2);
+  fotopeque[3].addEventListener('mouseover',peque3);
+
+
+
+
+
+
+  function grande (fotogrande){
+    imagengrande.src="img/IMG_4744.JPG"
+  }
+  function peque (fotopeque){
+    imagengrande.src="img/IMG_4744.JPG"
+  }
+  function peque1 (fotopeque1){
+    imagengrande.src="img/IMG_4465.JPG"
+  }
+  function peque2 (fotopeque2){
+    imagengrande.src="img/IMG_4666.JPG"
+  }
+  function peque3 (fotopeque3){
+    imagengrande.src="img/IMG_4621.JPG"
+  }
+
+
+//   document.getElementById('atras').addEventListener('click',atras);
+//   document.getElementById('adelante').addEventListener('click',adelante);
+//
+//   var num=document.getElementById('num');
+//   var i=0;
+//
+//   function atras (){
+//     if(i==0) {i=10;}
+//
+//    else{i--;}
+//    num.innerHTML=i;
+//
+//   }
+//
+//   function adelante (){
+//     if(i==10) {i=0;}
+//
+//    else{i++;}
+//    num.innerHTML=i;
+//
+//
+// }
+
+document.getElementById('atras').addEventListener('click',atras);
+document.getElementById('adelante').addEventListener('click',adelante);
+
+var fotogrande=document.getElementById('fotogrande');
+var num=document.getElementById('num');
+var i=0;
+
+function atras (){
+  if(i==0) {i=10;}
+
+ else{i--;}
+ num.innerHTML=i;
+
+}
+
+function adelante (){
+  if(i==fotopeque.length) {i=0;}
+
+ else{i++;}
+ num.innerHTML=i;
+ imagengrande.src=fotopeque[i].src;
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>

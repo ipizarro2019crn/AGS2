@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Temas</title>
+    <style media="screen">
+
+.contenidor{
+    overflow:hidden;
+    background:#99CCCC;
+    width:12rem;
+    height:25rem;
+    margin:0.5rem;
+    display:inline-block;
+    border-radius:0.5rem;
+}
+
+.bocadillo{
+    background: #669999;
+    width:5rem;
+    height:2rem;
+    position:relative;
+    top:0rem;
+    left:1rem;
+    border-radius:0.5rem;
+    /*box-shadow: -3px 3px 0px #006666;*/
+    margin:3rem 0;
+
+
+}
+
+.bocadillo:before{
+    content:"";
+    display:block;
+    position: relative;
+    width: 0;
+    height: 0;
+   border-top:solid transparent 0.5rem;
+    border-left:solid transparent 0.5rem;
+    border-bottom:solid white 0.5rem;
+    border-right:solid transparent 0.5rem;
+    top:1rem;
+    left:-0.5rem;
+    /*box-shadow: 0px 3px 0px #006666;*/
+
+}
+
+.izquierda{
+    transform:scale(1.5,1.5) translate(2em,0);
+    background-color:white;
+
+}
+
+.derecha{
+    transform:scale(-1.5,1.5) translate(3em,-2em);
+    float:right;
+
+}
+
+.circulo{
+    background:white;
+    width:5rem;
+    height:5rem;
+    position:relative;
+    border-radius:50%;
+    margin-left:4rem;
+    margin-top:13rem;
+
+}
+
+#mono{
+    background-color:#ffb799;
+}
+
+#dark{
+    background-color:#191919;
+}
+
+#artic{
+    background-color:#e6e6e6;
+    }
+
+.izquierda.mono{
+  background-color: #fff;
+}
+.derecha.mono{
+  background-color: #fff;
+  opacity: 0.5;
+}
+#portada{
+    width:100%;
+
+}
+
+.slider{
+  width:100%;
+  height:15rem;
+  overflow-x: scroll;
+  display:none;
+
+}
+
+#colors,#colors_dark,#colors_artic{
+      width:200%;
+      height: 10rem;
+      background-color: #333;
+      border-radius:10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+    }
+    #colors_dark{
+      width:200%;
+      height: 10rem;
+      background-color: #333;
+      border-radius:10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+
+.bola, input, #monocolor{
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      display: ;
+      float: left;
+      margin: 30px;
+      margin-left: 43px;
+      margin-top: 17px;
+      cursor: pointer;
+    }
+  input[type=color] {
+    border-radius: 50%;
+    border:none;
+  }
+
+  input[type=color]:focus{
+    -webkit-appearance: none;
+    outline: none;
+  }
+  input[type=color]::-webkit-color-swatch-wrapper{
+    border-radius:50%;
+    padding: 0;
+  }
+  input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  }
+
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="contenidor" id="portada">
+
+  <div class="bocadillo izquierda portada"></div>
+
+  <div class="bocadillo derecha portada"></div>
+
+  <div class="circulo"></div>
+
+</div>
+
+<div class="caja">
+  <div class="contenidor" id="default">
+
+  <div class="bocadillo izquierda"></div>
+
+  <div class="bocadillo derecha"></div>
+
+  <div class="circulo"></div>
+
+</div>
+
+<div class="contenidor" id="mono">
+
+  <div class="bocadillo izquierda mono"></div>
+
+  <div class="bocadillo derecha mono"></div>
+
+  <div class="circulo"></div>
+
+</div>
+
+
+<div class="contenidor" id="dark">
+
+  <div class="bocadillo izquierda dark"></div>
+
+  <div class="bocadillo derecha dark"></div>
+
+  <div class="circulo"></div>
+
+</div>
+
+  <div class="contenidor" id="artic">
+
+    <div class="bocadillo izquierda artic"></div>
+
+    <div class="bocadillo derecha artic"></div>
+
+    <div class="circulo"></div>
+
+  </div>
+
+  <script type="text/javascript">
+
+  </script>
+
+<div class="slider">
+  <div id="colors">
+      <div id="u" class="bola"></div>
+      <div id="dos" class="bola"></div>
+      <div id="tres" class="bola"></div>
+      <div id="cuatre" class="bola"></div>
+      <div id="cinc" class="bola"></div>
+      <div><input type="color" name="favcolor" id="monocolor"  value="#ff0000"></div>
+  </div>
+
+</div>
+<div class="slider">
+  <div id="colors_dark">
+      <div id="ud" class="bola"  style="background-color: rgb(255, 183, 153);"></div>
+      <div id="dosd" class="bola" style="background-color: rgb(231, 181, 88);"></div>
+      <div id="tresd" class="bola" style="background-color: rgb(143, 189, 164);"></div>
+      <div id="cuatred" class="bola" style="background-color: rgb(180, 132, 118);"></div>
+      <div id="cincd" class="bola" style="background-color: rgb(148, 129, 148);"></div>
+      <div><input type="color" name="favcolor" id="darkcolor" class="bola" value="#ff0000"></div>
+  </div>
+
+</div>
+<div class="slider">
+  <div id="colors_artic">
+      <div id="ua" class="bola" style="background-color: rgb(255, 183, 153);"></div>
+      <div id="dosa" class="bola"style="background-color: rgb(231, 181, 88);"></div>
+      <div id="tresa" class="bola" style="background-color: rgb(143, 189, 164);"></div>
+      <div id="cuatrea" class="bola"style="background-color: rgb(180, 132, 118);"></div>
+      <div id="cinca" class="bola"style="background-color: rgb(148, 129, 148);"></div>
+      <div><input type="color" name="favcolor" id="articolor" class="bola" value="#ff0000"></div>
+  </div>
+
+
+</div>
+
+  </div>
+
+  <script type="text/javascript" language="javascript">
+    document.getElementById('default').addEventListener('click',def);
+    document.getElementById('mono').addEventListener('click',mono);
+    document.getElementById('dark').addEventListener('click',dark);
+    document.getElementById('artic').addEventListener('click',artic);
+
+    var slider=document.getElementsByClassName('slider');
+
+    function def(){
+      document.getElementById('portada').style.backgroundColor="#99CCCC";
+      document.getElementById('colors').style.display="none";
+      document.getElementById('colors_dark').style.display="none";
+      document.getElementById('colors_artic').style.display="none";
+    }
+    function mono(){
+      document.getElementById('portada').style.backgroundColor="#ffb799";
+      document.getElementById('colors').style.display="block";
+      document.getElementById('colors_dark').style.display="none";
+      document.getElementById('colors_artic').style.display="none";
+      slider[0].style.display="block";
+      slider[1].style.display="none";
+      slider[2].style.display="none";
+    }
+    function dark(){
+      document.getElementById('portada').style.backgroundColor="#333";
+      document.getElementById('colors').style.display="none";
+      document.getElementById('colors_dark').style.display="block";
+      document.getElementById('colors_artic').style.display="none";
+      slider[0].style.display="none";
+      slider[1].style.display="block";
+      slider[2].style.display="none";
+    }
+    function artic(){
+      document.getElementById('portada').style.backgroundColor="#e6e6e6";
+      document.getElementById('colors').style.display="none";
+      document.getElementById('colors').style.display="none";
+      document.getElementById('colors_dark').style.display="none";
+      document.getElementById('colors_artic').style.display="block";
+      slider[0].style.display="none";
+      slider[1].style.display="none";
+      slider[2].style.display="block";
+    }
+
+    var color=["#ffb799","#E7B558","#8FBDA4","#B48476","#948194"];
+    var bolacolor=document.getElementsByClassName('bola');
+    for (var k = 0; k < bolacolor.length; k++) {
+      bolacolor[k].style.backgroundColor=color[k];
+    }
+
+    /*bolacolor[0].style.backgroundColor=color[0];
+    bolacolor[1].style.backgroundColor=color[1];
+    bolacolor[2].style.backgroundColor=color[2];
+    bolacolor[3].style.backgroundColor=color[3];
+    bolacolor[4].style.backgroundColor=color[4];*/
+    document.getElementById('u').addEventListener('click',salmon);
+    function salmon(){
+      document.getElementById('mono').style.backgroundColor="#ffb799";
+      document.getElementById('portada').style.backgroundColor="#ffb799";
+    }
+
+    document.getElementById('dos').addEventListener('click',amarillo);
+    function amarillo(){
+      document.getElementById('mono').style.backgroundColor="#E7B558";
+      document.getElementById('portada').style.backgroundColor="#E7B558";
+    }
+    document.getElementById('tres').addEventListener('click',verde);
+    function verde(){
+      document.getElementById('mono').style.backgroundColor="#8FBDA4";
+      document.getElementById('portada').style.backgroundColor="#8FBDA4";
+    }
+    document.getElementById('cuatre').addEventListener('click',rosado);
+    function rosado(){
+      document.getElementById('mono').style.backgroundColor="#B48476";
+      document.getElementById('portada').style.backgroundColor="#B48476";
+    }
+    document.getElementById('cinc').addEventListener('click',lila);
+    function lila(){
+      document.getElementById('mono').style.backgroundColor="#948194";
+      document.getElementById('portada').style.backgroundColor="#948194";
+    }
+
+//dark
+
+
+    var bocadillo_izquierda=document.getElementsByClassName('bocadillo izquierda');
+    var bocadillo_derecha=document.getElementsByClassName('bocadillo derecha');
+
+    document.getElementById('ud').addEventListener('click',salmond);
+    function salmond(){
+      document.getElementById('portada').style.backgroundColor="#333";
+
+
+      bocadillo_derecha[0].style.backgroundColor=color[0];
+      bocadillo_derecha[3].style.backgroundColor=color[0];
+      bocadillo_izquierda[0].style.backgroundColor=color[0];
+      bocadillo_izquierda[0].style.opacity="0.5";
+      bocadillo_izquierda[3].style.backgroundColor=color[0];
+      bocadillo_izquierda[3].style.opacity="0.5";
+    }
+    document.getElementById('dosd').addEventListener('click',amarillod);
+    function amarillod(){
+      document.getElementById('portada').style.backgroundColor="#333";
+
+      bocadillo_derecha[0].style.backgroundColor=color[1];
+      bocadillo_derecha[3].style.backgroundColor=color[1];
+      bocadillo_izquierda[0].style.backgroundColor=color[1];
+      bocadillo_izquierda[0].style.opacity="0.5";
+      bocadillo_izquierda[3].style.backgroundColor=color[1];
+      bocadillo_izquierda[3].style.opacity="0.5";
+    }
+    document.getElementById('tresd').addEventListener('click',verded);
+    function verded(){
+      document.getElementById('portada').style.backgroundColor="#333";
+
+
+      bocadillo_derecha[0].style.backgroundColor=color[2];
+      bocadillo_derecha[3].style.backgroundColor=color[2];
+      bocadillo_izquierda[0].style.backgroundColor=color[2];
+      bocadillo_izquierda[0].style.opacity="0.5";
+      bocadillo_izquierda[3].style.backgroundColor=color[2];
+      bocadillo_izquierda[3].style.opacity="0.5";
+    }
+
+    document.getElementById('cuatred').addEventListener('click',rosadod);
+    function rosadod(){
+      document.getElementById('portada').style.backgroundColor="#333";
+
+
+      bocadillo_derecha[0].style.backgroundColor=color[3];
+      bocadillo_derecha[3].style.backgroundColor=color[3];
+      bocadillo_izquierda[0].style.backgroundColor=color[3];
+      bocadillo_izquierda[0].style.opacity="0.5";
+      bocadillo_izquierda[3].style.backgroundColor=color[3];
+      bocadillo_izquierda[3].style.opacity="0.5";
+    }
+
+    document.getElementById('cincd').addEventListener('click',lilad);
+    function lilad(){
+      document.getElementById('portada').style.backgroundColor="#333";
+
+
+      bocadillo_derecha[0].style.backgroundColor=color[4];
+      bocadillo_derecha[3].style.backgroundColor=color[4];
+      bocadillo_izquierda[0].style.backgroundColor=color[4];
+      bocadillo_izquierda[0].style.opacity="0.5";
+      bocadillo_izquierda[3].style.backgroundColor=color[4];
+      bocadillo_izquierda[3].style.opacity="0.5";
+    }
+
+//artic
+
+//var bocadillo_izquierda_artic=document.getElementsByClassName('bocadillo izquierda artic');
+//var bocadillo_derecha_artic=document.getElementsByClassName('bocadillo derecha artic');
+
+document.getElementById('ua').addEventListener('click',salmona);
+function salmona(){
+  document.getElementById('portada').style.backgroundColor="#e6e6e6";
+
+
+  bocadillo_derecha[0].style.backgroundColor=color[0];
+  bocadillo_derecha[4].style.backgroundColor=color[0];
+  bocadillo_izquierda[0].style.backgroundColor=color[0];
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=color[0];
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+document.getElementById('dosa').addEventListener('click',amarilloa);
+function amarilloa(){
+  document.getElementById('portada').style.backgroundColor="#e6e6e6";
+
+
+  bocadillo_derecha[0].style.backgroundColor=color[1];
+  bocadillo_derecha[4].style.backgroundColor=color[1];
+  bocadillo_izquierda[0].style.backgroundColor=color[1];
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=color[1];
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+document.getElementById('tresa').addEventListener('click',verdea);
+function verdea(){
+  document.getElementById('portada').style.backgroundColor="#e6e6e6";
+
+
+  bocadillo_derecha[0].style.backgroundColor=color[2];
+  bocadillo_derecha[4].style.backgroundColor=color[2];
+  bocadillo_izquierda[0].style.backgroundColor=color[2];
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=color[2];
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+
+document.getElementById('cuatrea').addEventListener('click',rosadoa);
+function rosadoa(){
+  document.getElementById('portada').style.backgroundColor="#e6e6e6";
+
+
+  bocadillo_derecha[0].style.backgroundColor=color[3];
+  bocadillo_derecha[4].style.backgroundColor=color[3];
+  bocadillo_izquierda[0].style.backgroundColor=color[3];
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=color[3];
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+
+document.getElementById('cinca').addEventListener('click',lilaa);
+function lilaa(){
+  document.getElementById('portada').style.backgroundColor="#e6e6e6";
+
+
+  bocadillo_derecha[0].style.backgroundColor=color[4];
+  bocadillo_derecha[4].style.backgroundColor=color[4];
+  bocadillo_izquierda[0].style.backgroundColor=color[4];
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=color[4];
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+document.getElementById('monocolor').addEventListener('input',monocolo);
+function monocolo(){
+  document.getElementById('mono').style.backgroundColor=monocolor.value;
+  document.getElementById('portada').style.backgroundColor=monocolor.value;
+}
+
+document.getElementById('darkcolor').addEventListener('input',darkcolo);
+function darkcolo(){
+  document.getElementById('portada').style.backgroundColor="darkcolor.value";
+
+
+  bocadillo_derecha[0].style.backgroundColor=darkcolor.value;
+  bocadillo_derecha[3].style.backgroundColor=darkcolor.value;
+  bocadillo_izquierda[0].style.backgroundColor=darkcolor.value;
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[3].style.backgroundColor=darkcolor.value;
+  bocadillo_izquierda[3].style.opacity="0.5";
+}
+
+document.getElementById('articolor').addEventListener('input',artico);
+function artico(){
+  document.getElementById('portada').style.backgroundColor="articolor.value";
+
+
+  bocadillo_derecha[0].style.backgroundColor=articolor.value;
+  bocadillo_derecha[4].style.backgroundColor=articolor.value;
+  bocadillo_izquierda[0].style.backgroundColor=articolor.value;
+  bocadillo_izquierda[0].style.opacity="0.5";
+  bocadillo_izquierda[4].style.backgroundColor=articolor.value;
+  bocadillo_izquierda[4].style.opacity="0.5";
+}
+
+  </script>
+</body>
+</html>

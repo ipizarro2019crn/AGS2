@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="color" id="colour" value="#00ff00">
+  <p>Nom</p><input type="range" id="nom" min"12" max "144">
+   <!-- <p>Cognom</p><input type="text" id="cognom"> -->
+  <!-- <input type="submit" id="envia"> -->
+  <p id="usuari"></p>
+  <p id="txt">Irene</p>
+  <script type="text/javascript">
+    // var nom=document.getElementById('nom');
+    // var cognom=document.getElementById('cognom');
+    //document.getElementById('envia').addEventListener('click',enviar);
+
+
+
+  document.getElementById('nom').addEventListener('input',enviar);
+
+    function enviar(){
+      document.getElementById('usuari').innerHTML="Hola "+nom.value;//" "+cognom.value;
+      document.getElementById('txt').style.fontSize=nom.value+"px";
+    }
+
+    document.getElementById('colour').addEventListener('input',canvi);
+    function canvi(){
+      document.getElementById('txt').style.color=colour.value;
+
+    }
+
+
+
+
+  </script>
+</body>
+</html>
