@@ -1,0 +1,103 @@
+*{
+  position: relative;
+}
+.portada{
+
+background: url("../img/back.png");
+}
+body{
+  background: url("../img/fons.jpg");
+}
+.titulo{
+  height: 4em;
+  text-align: center;
+  font-size: 2em;
+  font-family:Helvetica, Arial, Sans-serif;
+  line-height:4em;
+  color: grey;
+  font-weight: lighter;
+  position: absolute;
+}
+
+.fondo{
+    background: url("../img/back.png");
+    height: 589px;
+
+}
+
+
+
+h4{
+  font-family:Helvetica, Arial, Sans-serif;
+  background-color: white;
+  height:40px;
+  line-height: 40px;
+  position: relative;
+}
+.pulp{
+  height: 200px;
+  background: url("../img/small_pulp.jpg");
+  background-repeat: no-repeat;
+
+
+}
+.taxi{
+  height: 200px;
+  background: url("../img/small_taxi.jpg");
+  background-repeat: no-repeat;
+
+}
+.gold{
+  height: 200px;
+  background: url("../img/small_bond.jpg");
+  background-repeat: no-repeat;
+
+}
+.busters{
+  height: 200px;
+  background: url("../img/small_ghost.jpg");
+  background-repeat: no-repeat;
+
+}
+.bean{
+  height: 200px;
+  background: url("../img/small_bean.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.future{
+  height: 200px;
+  background: url("../img/small_back.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.rider{
+  height: 200px;
+  background: url("../img/small_rider.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.team{
+  height: 200px;
+  background: url("../img/small_team.jpg");
+  background-repeat: no-repeat;
+
+}
+.bad{
+  height: 200px;
+  background: url("../img/small_break.jpg");
+  background-repeat: no-repeat;
+
+}
+
+
+.peu{
+  background: url("../img/logo_carsandfilms.png");
+  position:relative;
+  height: 220px;
+  background-repeat: no-repeat;
+
+}
