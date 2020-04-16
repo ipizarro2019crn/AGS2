@@ -1,0 +1,135 @@
+*{
+  position: relative;
+}
+div {
+  background: ;
+  margin-top: 10px;
+}
+.logo{
+  height: 87px;
+}
+.menu{
+  height: 87px;
+}
+.fondoslider{
+  height:500px;
+    background: url("../img/tai.jpg");
+}
+
+.titulomapa{
+  height: 121px;
+  text-align: center;
+  font-size: 30pt;
+  font-family:sans-serif;
+  line-height: 121px;
+  color: #bf8d22;
+  font-weight: lighter;
+}
+.mapa{
+  height: 390px;
+  background: url("../img/mapa.png");
+}
+
+.logo{
+    background: url("../img/PLANTILLA_ORIGEN_03.png");
+}
+
+.tituloproductos{
+  height: 149px;
+  font-size: 14pt;
+  font-family:sans-serif;
+  line-height: 149px;
+  color: #bf8d22;
+  font-weight: bold;
+}
+
+.taimg{
+  height: 229px;
+  background: url("../img/PLANTILLA_ORIGEN_20.png");
+  background-color: red;
+
+}
+.MARimg{
+  height: 229px;
+  background: url("../img/PLANTILLA_ORIGEN_26.png");
+}
+.MEXimg{
+  height: 229px;
+  background: url("../img/PLANTILLA_ORIGEN_22.png");
+}
+
+.taimg:hover  {
+  transition: .5s;
+  filter: opacity(50%);
+}
+
+.MEXimg:hover  {
+  transition: .5s;
+  filter: opacity(50%);
+}
+
+.MARimg:hover  {
+  transition: .5s;
+  filter: opacity(50%);
+}
+
+.tit_tai{
+  height: 65px;
+  font-size: 20pt;
+  font-family:sans-serif;
+  color: #bf8d22;
+  font-weight: bold;
+  text-align: center;
+}
+
+li{
+  text-decoration: none;
+  list-style: none;
+}
+.carrito{
+  height: 41px;
+  background: url("../img/PLANTILLA_ORIGEN_05.png");
+}
+
+.esp{
+    height: 80px;
+    font-size: 16px;
+    font-family:sans-serif;
+    line-height: 80px;
+    color: #bf8d22;
+    font-weight: bold;
+    text-align: center;
+
+}
+a:visited{
+  color: #000;
+}
+.peu {
+  height: 30px;
+  background: #fff;
+}
+
+.peu li {
+  font-size: 12px;
+  font-family: 'Spartan', sans-serif;
+  color: #000;
+  line-height: 35px;
+}
+.pastilla {
+  height: 30px;
+  background:  #bf8d22;
+}
+
+
+
+/* A:hover { color: black; font-family: arial; text-decoration: none }
+A:visited {color: black;  font-family: arial; text-decoration: none }
+	*{outline:none !important;}*:focus {outline: none !important;}textarea:focus, input:focus{outline: none !important;}	a{text-decoration: none !important;outline: none !important;}*/
+
+
+  .MEXimg{
+    height: 229px;
+    background: url("../img/PLANTILLA_ORIGEN_22.png");
+    background-color: red;
+
+  }
