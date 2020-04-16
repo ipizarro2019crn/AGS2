@@ -95,6 +95,16 @@ para anular el efecto del float */
   background-image: url(img/a015.png);
 
 }
+
+#a16 {
+  background-image: url(img/a016.png);
+
+}
+
+#a17 {
+  background-image: url(img/a017.png);
+
+}
 a {
   height: 40px 40px;
   display: block;
