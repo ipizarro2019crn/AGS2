@@ -1,0 +1,170 @@
+body {
+  color: red;
+  font-family: 'ROBOTO', sans-serif;
+}
+
+.contenido {
+  background-color: #fab733;
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(../img/splash.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+}
+
+h1 {
+  margin-top: 20%;
+}
+
+h1, p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.login{
+  background-color: #3D9A9A;
+  color:white;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+h1{
+  font-size: 10em;
+}
+h2{
+  background-color: #2D7272;
+  border-radius: 5em;
+  width: 15em;
+  height: 2em;
+  margin:2em;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: lighter;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+.ENTRAR{
+  border: 0.5em solid #2D7272;
+  width: 5em;
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+.hamburguesa img{
+  margin-top: 5em;
+  margin-left: 1em;
+  height: 4em;
+
+
+}
+
+.line1{
+  background-color: #E5E5E5;
+  width:100%;
+  height: 1em;
+  margin-top:5em;
+}
+.lupa img{
+
+  margin-left: 20em;
+  margin-top: 1em;
+  height: 3em;
+
+}
+.search{
+  background-color: #3D9A9A;
+  width:20em;
+  height: 0.5em;
+  margin-left: 20em;
+  margin-top: 1em;
+}
+
+.mas img{
+
+  width: 10em;
+
+}
+.mas{
+  position: fixed;
+  right: 3em;
+  bottom: 6em;
+}
+
+
+.mesa{
+
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  color:#2D7272;
+  margin:1.5em;
+  float: left;
+  font-size: 5em;
+  line-height: 3em;
+
+}
+a:link{
+  outline:none;
+  text-decoration:none;
+   color:#2D7272!important;
+}
+a:visited {
+   text-decoration: none
+   color:#2D7272!important;
+ }
+ a:hover{
+   text-decoration: none;
+   color:#2D7272!important;
+ }
+
+a:active {
+   color:#2D7272!important;
+
+}
+.slide{
+  width: 10em;
+  height: 10em;
+  color:grey;
+  display: none;
+}
+
+.comida{
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  width: 8em;
+  height: 3em;
+  text-align: center;
+  color:#2D7272;
+  margin:2em;
+  font-size: 5em;
+  line-height: 3em;
+}
+.comida2{
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  width: 5em;
+  height: 2em;
+  text-align: center;
+  color:#2D7272;
+  margin:0.5em;
+  font-size: 5em;
+  line-height: 2em;
+  margin-left: 3.5em;
+
+}
