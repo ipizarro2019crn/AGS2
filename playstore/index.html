@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+</head>
+<style media="screen">
+  .elementos{
+    display: inline-block;
+    width: 100%;
+    height: 15rem;
+    overflow-x: scroll;
+    display: flex;
+  }
+
+  video{
+    height: auto;
+    width: 20rem;
+    float: left;
+    margin-right:0.5rem;
+  }
+  img{
+    height: 11.3rem;
+    width: auto;
+    float: left;
+    margin-right:0.5rem;
+  }
+  .horizontal-slider{
+    width: 100%;
+    height: 15rem;
+    overflow-x: scroll;
+    display: flex;
+  }
+  .logo{
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  .menu{
+    overflow-x: hidden;
+    display: inline-block;
+  }
+  body{
+    font-family: 'roboto',sans-serif;
+  }
+  .titulo{
+    font-size: 1.5rem;
+    color:#4a4a49;
+
+  }
+  h1{
+    margin-top: 0px;
+  }
+  .SL{
+    color:#658d55;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+
+.boton{
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #658d55;
+  width: 10rem;
+  height: 2rem;
+  margin-left: auto;
+  MARGIN-RIGHT: auto;
+  line-height: 2rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+.info{
+  color:#4a4a49;
+}
+.container{
+  margin:1rem;
+}
+
+</style>
+<body>
+<div class="container">
+    <div class="menu">
+      <div class="logo"></div>
+      <div class="titulo">Goodeal- Teleworking offers App</div>
+      <div class="SL">Goodeal SL</div>
+    </div>
+    <div class="boton">
+      <div class="button">Install</div>
+
+    </div>
+    <div class="elementos">
+        <div class="horizontal-slider">
+          <div class="video">
+            <video  controls>
+              <source src="img/Final2.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+          <div class="imagenes">
+            <img width="" src="img/part1.png" alt="">
+          </div>
+          <div class="imagenes">
+            <img src="img/part2.png" alt="">
+          </div>
+          <div class="imagenes">
+            <img src="img/part3.png" alt="">
+          </div>
+          <div class="imagenes">
+            <img src="img/part4.png" alt="">
+          </div>
+          <div class="imagenes">
+            <img src="img/part5.png" alt="">
+          </div>
+        </div>
+    </div>
+    <div class="info">
+      <h3>App info</h3>
+      <p>Goodeal is the only app that you can find teleworking jobs.</p>
+    </div>
+</div>
+
+</body>
+</html>
