@@ -446,7 +446,7 @@ margin-top: 15rem;
       margin: 1rem 0rem;
     }
     .home-section-wrapper{
-          padding: 30px 0 70px ;
+          padding: 80px 0 70px ;
     }
     .home-section-container{
       padding-right: 10px;
@@ -807,4 +807,56 @@ span.psw {
 .request {
     margin-top: 20rem;
     text-align: center;
+}
+.menuCSS3 ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.menuCSS3 a {
+    display: block;
+    padding: 1.1em;
+    background-color: #fab733;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    width: 6.5rem;
+	}
+	.menuCSS3 a:hover {
+		background-color: #fcd588;
+	}
+	.menuCSS3 ul li ul {
+		display: none;
+	}
+	.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+		display: block;
+	}
+  .menuCSS3{
+    margin-top: 4.1rem;
+    font-size: 1rem;
+
+    text-align: center;
+  }
+  @media (min-width: 768px){
+.menuCSS3 {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}}
+@media (max-width: 768px){
+.menuCSS3 {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}}
+#usuari{
+  color:white;
+  background-color: #fab733;
+
+}
+.salary{
+  background-color: #fab733;
 }
