@@ -816,7 +816,7 @@ span.psw {
 	}
 	.menuCSS3 a {
     display: block;
-    padding: 1em;
+    padding: 0.5em;
     background-color: #fab733;
     text-decoration: none;
     color: white;
