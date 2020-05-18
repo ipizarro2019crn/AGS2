@@ -816,12 +816,12 @@ span.psw {
 	}
 	.menuCSS3 a {
     display: block;
-    padding: 1.1em;
+    padding: 1em;
     background-color: #fab733;
     text-decoration: none;
     color: white;
-    font-weight: 500;
-    width: 6.5rem;
+    font-weight: 300;
+    width: 6.6rem;
 	}
 	.menuCSS3 a:hover {
 		background-color: #fcd588;
