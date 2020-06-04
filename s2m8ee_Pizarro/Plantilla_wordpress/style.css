@@ -1,0 +1,132 @@
+/*
+Theme Name:
+Description:  Examen REcuperación UF2
+Author:       Irene
+Version:      1.0
+License:      A copiar
+Tags:
+*/
+
+
+body {
+  color: white;
+  font-family: 'Helvetica', sans-serif;
+
+  background-color: #222;
+  margin:0;
+}
+h1{
+  font-weight: lighter;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  display: inline-block;
+
+}
+li{
+  float: left;
+  margin: 0 5px;
+
+}
+.redes{
+   float: right;
+}
+.barra{
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 3rem;
+
+  width: 100%;
+}
+.barra  img{
+  margin-left: 1.25rem !important;
+  margin-right: 1.25rem!important;
+  margin-top: 0.3rem!important;
+  margin-bottom:0.3rem!important;
+}
+
+
+
+a:link{
+  color: #CCC;
+  text-decoration: none;
+
+}
+
+a:active{
+  color: #CCC;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color:#FFF;
+  text-decoration: none;
+}
+a:visited{
+  color: #CCC;
+  text-decoration: none;
+}
+ .film{
+  margin-left: 1rem;
+  display: inline-block;
+}
+.container img{
+  border-radius: 0.5rem;
+}
+.container{
+  margin-top: 1rem;
+  display: inline-block;
+
+}
+.film p {
+  margin-left: 1rem;
+
+}
+.description{
+
+  margin-left: 3rem;
+  width: 70rem;
+  display: inline-block;
+}
+.servidor{
+margin-left: 15rem;
+margin-right: 0rem!important;
+width: 50%;
+display: inline-block;
+
+
+}
+.estat1, .estat2, .estat3{
+  float: right;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.estat1{
+  background-color: green;
+}
+.estat2{
+  background-color: red;
+}
+.estat3{
+  background-color: orange;
+}
+.comentaris{
+  float: right;
+  width: 30rem;
+    margin-left: 1rem;
+    display: inline-block;
+    margin-right: 0!important;
+}
+.boton:hover{
+  background-color: #333;
+
+}
+.boton{
+  padding: 0.5rem;
+  width: 10rem;
+}
